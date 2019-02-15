@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinatorRootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inputkan Nilai"
+            android:paddingLeft="3dp"
+            android:inputType="number"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:layout_below="@+id/tvTitle"
+            android:id="@+id/etNilai_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:hint="Inputkan Nilai A"/>
+
+        <EditText
+            android:layout_below="@+id/etNilai_A"
+            android:id="@+id/etNilai_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:hint="Inputkan Nilai B"/>
+
+        <TextView
+            android:layout_below="@+id/etNilai_B"
+            android:id="@+id/tvPenjumlahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Penjumlahan"
+            android:paddingLeft="3dp"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+            android:layout_below="@+id/tvPenjumlahan"
+            android:id="@+id/LayoutJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnActionTambah"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+
+            <Button
+                android:id="@+id/btnActionKurang"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <Button
+                android:id="@+id/btnActionKali"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="x"/>
+
+            <Button
+                android:id="@+id/btnActionBagi"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
