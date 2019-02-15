@@ -35,7 +35,7 @@ public class CalculatorActivity extends AppCompatActivity {
 
         rootLayoutSnackbar = (CoordinatorLayout) findViewById(R.id.coordinatorRootLayout);
 
-        //Membuat Event Pada Button
+        //membuat event pada button
         btTambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
